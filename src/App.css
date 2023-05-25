@@ -1,0 +1,104 @@
+.rightPane {
+  background-color: #f2f2f2;
+  padding: 20px;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.searchDiv {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.searchDiv input {
+  border: none;
+  outline: none;
+  margin-left: 8px;
+  width: 180px;
+}
+
+.profileDiv {
+  display: flex;
+  align-items: center;
+}
+
+.profileDiv .textDiv {
+  margin-right: 16px;
+  text-align: right;
+}
+
+.userText {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.desgText {
+  margin: 0;
+  font-size: 12px;
+  color: gray;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.dashboard-item {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.thumbnail {
+  width: 120px; 
+  height: 120px; 
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.item-details h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.item-details p {
+  margin: 4px 0;
+  font-size: 12px;
+  color: gray;
+}
+
+.graph {
+  height: 80px;
+  background-color: #f2f2f2;
+  margin-bottom: 6px;
+}
+
+.progress-bar {
+  height: 6px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #007bff;
+  border-radius: 4px;
+}

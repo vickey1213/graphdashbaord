@@ -1,0 +1,255 @@
+.rightPane {
+  background-color: rgb(241, 244, 249);
+  width: 82vw;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  box-shadow: 0rem 0.1rem 0.3rem 0.01rem rgb(225, 224, 224);
+  background-color: #ffffff;
+  color: rgb(167, 176, 189);
+}
+
+.profileDiv,
+.searchDiv,
+.settingsDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.profileDiv {
+  width: 20rem;
+  justify-content: space-between;
+}
+
+.searchDiv > input {
+  border: none;
+  outline: none;
+  padding: 0.22rem;
+  font-size: 1rem;
+}
+
+.textDiv > p {
+  margin: 0rem;
+  text-align: center;
+}
+
+.userText {
+  color: black;
+  margin-bottom: 0.3rem !important;
+}
+
+.desgText {
+  color: rgb(124, 132, 144);
+}
+
+.incomeDiv {
+  grid-area: income;
+}
+
+.balanceDiv {
+  grid-area: balances;
+}
+
+.newUsersDiv {
+  grid-area: users;
+}
+
+.transactionsDiv {
+  grid-area: transactions;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-areas:
+    "income balances"
+    "users balances"
+    "transactions transactions";
+  gap: 2rem;
+  padding: 2rem 10rem;
+}
+
+.incomeDiv,
+.balanceDiv,
+.newUsersDiv {
+  background-color: #ffffff;
+  border-radius: 0.3rem;
+}
+
+.balanceDiv {
+  width: 100%;
+}
+
+.status {
+  color: green !important;
+  font-weight: bold !important;
+}
+
+.incomeDiv,
+.newUsersDiv {
+  padding: 0.5rem 1rem;
+}
+
+.chartHeader,
+.textPercent,
+.balHeader {
+  display: flex;
+  align-items: center;
+}
+
+.chartHeader,
+.balHeader {
+  justify-content: space-between;
+}
+
+.chartHeader {
+  color: rgb(151, 153, 157);
+}
+
+.textPercent > h1 {
+  margin: 0rem !important;
+}
+
+.textPercent > p {
+  background-color: rgb(100, 187, 132);
+  padding: 0.3rem 0.5rem;
+  border-radius: 2rem;
+  margin-left: 1rem;
+  color: white;
+}
+
+.balanceValues {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2rem;
+}
+
+.earningBal,
+.salesBal {
+  border: 0.01rem solid rgb(216, 219, 224);
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+
+.earningBal > p,
+.salesBal > p {
+  margin: 0rem;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: -0.5rem;
+  color: rgb(151, 153, 157);
+}
+
+.earningBal > .textPercent,
+.salesBal > .textPercent {
+  margin-left: 1rem;
+}
+
+.balHeader {
+  border-bottom: 0.12rem solid rgb(216, 219, 224);
+  padding: 0rem 2rem;
+}
+
+.btn {
+  border: 0.01rem solid rgb(216, 219, 224) !important;
+  color: rgb(129, 131, 134) !important;
+}
+
+.balancesDiv {
+  margin: 1rem 2rem;
+}
+
+.paper {
+  height: 7rem;
+}
+
+.chart {
+  height: 7rem !important;
+}
+
+.upperBar {
+  fill: rgb(241, 244, 249);
+}
+
+.lowerBar {
+  fill: rgb(44, 112, 245);
+}
+
+.areaPaper {
+  height: 17.3rem !important;
+  margin: 0rem !important;
+  padding: 0rem !important;
+  box-shadow: none !important;
+}
+
+.areaLine {
+  position: relative;
+  border: 1px solid black !important;
+  background-color: aqua !important;
+  width: 120% !important;
+  padding: 0px !important;
+}
+
+.areaGraph {
+  width: 47vw !important;
+}
+
+@media (max-width: 1919px) {
+  .rightPane {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 1483px) {
+  .gridContainer {
+    grid-template-areas:
+      "income"
+      "users"
+      "balances"
+      "transactions";
+    gap: 1rem;
+    padding: 1rem 1rem;
+  }
+
+  .areaGraph {
+    width: 80vw !important;
+  }
+}
+
+@media (max-width: 933px) {
+  .gridContainer,
+  .balanceValues {
+    display: block;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 401px) {
+  .header {
+    display: block;
+  }
+}
+
+@media (max-width: 401px) {
+  .textPercent {
+    display: block;
+  }
+
+  .earningBal > p,
+  .salesBal > p {
+    margin-bottom: 0.5rem;
+  }
+
+  .balHeader,
+  .profileDiv,
+  .textDiv > p {
+    display: block;
+    text-align: left;
+    width: 5rem;
+    margin-top: 1rem;
+  }
+}

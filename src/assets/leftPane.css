@@ -1,0 +1,107 @@
+.leftPane {
+    width: 18vw;
+    border-right: 0.01rem solid rgba(167, 176, 189, 0.527);
+}
+
+.commonIconName {
+    display: flex;
+    align-items: center;
+}
+
+.commonIconName>span {
+    margin-right: 1rem;
+    color: rgb(167, 176, 189);
+}
+
+.appName_div {
+    border-bottom: 0.01rem solid rgba(167, 176, 189, 0.527);
+    font-size: large;
+    font-weight: bold;
+}
+
+
+/* common padding for all */
+.appMain_div,
+.appSecondary_div,
+.appLogout_div,
+.appName_div {
+    padding: 1rem 1rem;
+}
+
+.appSecondary_div>.commonIconName,
+.appLogout_div>.commonIconName,
+.appName_div>.commonIconName {
+    padding: 0rem 0.5rem;
+}
+
+.appMain_div,
+.appSecondary_div,
+.appLogout_div {
+    color: rgb(118, 126, 137);
+    font-weight: 500;
+}
+
+.leftTextHeader {
+    font-size: small;
+}
+
+.leftMain_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid; */
+    padding: 0rem 0.5rem;
+}
+
+.accordation {
+    box-shadow: none !important;
+    color: rgb(118, 126, 137) !important;
+    margin: 0px !important;
+}
+
+
+.accSummary {
+    padding: 0px 0.5rem !important;
+}
+
+.text {
+    margin-left: 1rem !important;
+    font-weight: 550 !important;
+}
+
+.icon {
+    color: rgb(162, 166, 172) !important;
+}
+.accSummary:focus{
+    background-color: rgb(71,91,219) !important;
+    border-radius: 0.3rem !important;
+    color: #ffffff !important;
+}
+
+
+
+.iconsHover:hover {
+    cursor: pointer;
+}
+
+@media (max-width:1137px) {
+    .appName_div {
+        display: block;
+        padding: 1rem;
+    }
+
+    .commonIconName {
+        display: block;
+    }
+    .leftPane{
+        display: none;
+    }
+}
+@media (max-width:1079px){
+    .accordation{
+        display: block !important;
+    }
+}
+img{
+    width: 200px;
+}
